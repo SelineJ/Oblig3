@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superpoll</title>
+    <script src="js/model.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/createPollPageView.js"></script>
+    <script src="js/createPollPageController.js"></script>
+    <script src="js/votePageView.js"></script>
+    <script src="js/votePageController.js"></script>
+    <script src="js/allPollPageView.js"></script>
+   
+</head>
+
+<body>
+    <div>
+        Meny:
+        <a href="javascript:changePage('vote')">stem</a>
+        <a href="javascript:changePage('createVote')">lag poll</a>
+        <a href="javascript:changePage('allPolls')">Oversikt over polls</a>
+    </div>
+    <div id="app"></div>
+
+    <script>
+        updateView();
+    </script>
+</body>
+
+</html>
